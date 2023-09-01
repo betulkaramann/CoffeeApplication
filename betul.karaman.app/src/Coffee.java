@@ -1,7 +1,15 @@
+/*
+* Owner: Betül Karaman
+* bu classta genel olarak nesne üretimi yapıldı. nesnelerin özellikleri private keywordu ile korundu. böylelikle dışardan erişim engellendi.
+* tüm özellikler, değişimi önlenebilmesi için final keywordu kullanılarak korundu.
+* iyileştirme için gerekli yerlerde null kontrolleri yapılabilir.
+*/
+
+
 public class Coffee {
-    private String name;
-    private double price;
-    private CoffeeDescription description;
+    private final String name;
+    private final double price;
+    private final CoffeeDescription description;
 
     public Coffee(String name, double price, CoffeeDescription description) {
         this.name = name;
